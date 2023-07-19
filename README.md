@@ -1,6 +1,6 @@
 # openai-sk-demos
 
-## What is Semantic Kernel
+## What is Semantic Kernel?
 
 - Semantic Kernel serves as an operating system for the LLM API.
 - It takes inputs, processes them with the model, and provides the output.
