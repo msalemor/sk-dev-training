@@ -1,4 +1,4 @@
-# openai-sk-demos
+# Introduction to Semantic Kernel
 
 ## What is Semantic Kernel?
 
