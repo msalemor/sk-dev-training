@@ -1,0 +1,5 @@
+POST https://alemorfr.openai.azure.com/openai/deployments/gpt/chat/completions?api-version=2023-03-15-preview HTTP/1.1
+Content-Type: application/json
+api-key: 32c879df39154dafae39e450c89f0c0a
+
+{"messages":[{"role":"system","content":"You are a general bot."}],"max_tokens":1000,"temperature":0.3,"n":1,"stop":null}

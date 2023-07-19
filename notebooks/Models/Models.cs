@@ -1,7 +1,3 @@
-using System.Text.Json.Serialization;
-
-namespace Models;
-
 record Message([property: JsonPropertyName("role")] string Role,
     [property: JsonPropertyName("content")] string Content);
 

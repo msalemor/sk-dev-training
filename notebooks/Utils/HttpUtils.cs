@@ -1,8 +1,4 @@
-namespace HttpUtil;
-
-using System.Net.Http.Headers;
-
-async Task<Tuple<string?, int, int>> GetGptCompletionAsync(List<Message> history)
+async Task<Tuple<string?, int, int>> GetGptCompletionAsync(HttpClient client, string uri, List<Message> history)
 {
     var prompt = new Prompt(history, 1000, 0.3d);
     var json = JsonSerializer.Serialize(prompt);
@@ -13,9 +9,11 @@ async Task<Tuple<string?, int, int>> GetGptCompletionAsync(List<Message> history
 
     if (!response.IsSuccessStatusCode)
     {
-        Console.WriteLine($"Error: {response.StatusCode}");
+        Console.WriteLine($"Error: {response.StatusCode} {response.ReasonPhrase}");
         return new Tuple<string?, int, int>(null, 0, 0);
     }
+
+    Console.WriteLine("made it.");
 
     var completion = await response.Content.ReadAsStringAsync();
     var completionObject = JsonSerializer.Deserialize<Completion>(completion);
