@@ -17,13 +17,15 @@
     - ie: `var skfJokeDefinition = "Write a joke about {{$$input}}.";`
     - ie: `var skSpanishTranslator = "Translate from English to Spanish: {{$$input}}";`
   - SK functions can be piped together:
-    - ie: 
+    - ie:
+
 ```c#
     var result = await kernel.RunAsync("a chicken crossing the road",
         skfJokeGenerator,
         skfSpanishTranslator,
         text["uppercase"]);
 ```
+
 - Output: `¿POR QUÉ CRUZÓ EL POLLO LA CARRETERA? PORQUE QUERÍA VER SI LA HIERBA ERA MÁS VERDE AL OTRO LADO. PERO RESULTA QUE ERA ARTIFICIAL Y SE QUEDÓ ATASCADO EN EL CÉSPED. ¡QUÉ POLLO TAN TONTO!`
 - SK functions can be in-line, coded, or loaded from files.
 - SK planner, dynamically can create complex orchestrations.
