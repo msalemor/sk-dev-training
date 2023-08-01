@@ -1,0 +1,69 @@
+# https://learn.microsoft.com/en-us/azure/ai-services/openai/reference
+# https://platform.openai.com/tokenizer
+# https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api
+# Remember to create an .env file similar to the .env.example file with the actual values
+
+POST {{$dotenv GPT_OPENAI_FULL_ENDPOINT}} HTTP/1.1
+api-key: {{$dotenv %GPT_OPENAI_KEY}}
+Content-Type: application/json
+
+{
+    "messages": [
+        {
+            "role" : "user",
+            "content" : "What is the speed of light in kilometers per hour?"
+        }
+    ],
+    "max_tokens": 100,
+    "temperature": 0.3,
+    "n":1
+}
+
+###
+POST {{$dotenv GPT_OPENAI_FULL_ENDPOINT}} HTTP/1.1
+api-key: {{$dotenv %GPT_OPENAI_KEY}}
+Content-Type: application/json
+
+{
+    "messages": [
+        {
+            "role" : "user",
+            "content" : "What is the disntance to the Moon?"
+        }
+    ],
+    "max_tokens": 100,
+    "temperature": 0.3,
+    "n":1,
+    "stream": true
+}
+
+###
+
+POST {{$dotenv GPT_OPENAI_FULL_ENDPOINT}} HTTP/1.1
+api-key: {{$dotenv %GPT_OPENAI_KEY}}
+Content-Type: application/json
+
+{
+    "messages": [
+        {
+            "role" : "user",
+            "content" : "Write a blog about Pakistan's history."
+        }
+    ],
+    "max_tokens": 100,
+    "temperature": 0.3
+}
+###
+
+POST {{$dotenv GPT_OPENAI_FULL_ENDPOINT}} HTTP/1.1
+api-key: {{$dotenv %GPT_OPENAI_KEY}}
+Content-Type: application/json
+
+{
+    "messages": [
+        {"role":"system","content":"You are a general assistant"},
+        {"role":"user","content":"What is the speed of light?"}
+    ],
+    "max_tokens": 100,
+    "temperature": 0.3
+}
