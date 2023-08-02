@@ -35,12 +35,12 @@
 
 ### When
 
-- There's language support particularly for C# and Python (more languages support comming).
+- There's language support particularly for C# and Python (more languages support coming).
 - The app can take advantage of the functionality provided by Semantic Kernel such as pipes, orchestration, memories, etc.
-- If you need complex orchestrations.
+- If you need complex SK function orchestrations.
 - If you need to work with embeddings.
 
 ### When not to
 
-- SK may be too complex for simple application.
+- SK may be too complex for simple applications.
 - Obviously, if a language is not supported.
