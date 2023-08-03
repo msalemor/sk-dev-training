@@ -3,6 +3,7 @@
 # https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api
 # Remember to create an .env file similar to the .env.example file with the actual values
 
+
 POST {{$dotenv GPT_OPENAI_FULL_ENDPOINT}} HTTP/1.1
 api-key: {{$dotenv %GPT_OPENAI_KEY}}
 Content-Type: application/json
@@ -10,13 +11,17 @@ Content-Type: application/json
 {
     "messages": [
         {
+            "role" : "system",
+            "content" : "You are a general assistant."
+        },
+        {
             "role" : "user",
             "content" : "What is the speed of light in kilometers per hour?"
         }
     ],
     "max_tokens": 100,
     "temperature": 0.3,
-    "n":1
+    "n": 1
 }
 
 ###

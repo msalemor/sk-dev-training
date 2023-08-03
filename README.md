@@ -3,7 +3,7 @@
 ## What is Semantic Kernel?
 
 - Is an open-source SDK that lets you easily combine AI services like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages like C# and Python.
-- It provides a set of connectors and plugins that allow you to orchestrate AI models and skills with natural language semantic functions, traditional code native functions, and embeddings-based memory.
+- It provides a set of connectors and plugins that allow you to orchestrate AI models and skills with natural language semantic functions, traditional native code functions, and embeddings-based memory.
 - It supports prompt templating, function chaining, vectorized memory, and intelligent planning capabilities out of the box.
 - It enables you to create AI apps that combine the best of both worlds: natural language understanding and conventional programming logic
 
