@@ -4,6 +4,18 @@
 # Remember to create an .env file similar to the .env.example file with the actual values
 
 
+POST {{$dotenv DAVINCI_OPENAI_FULL_ENDPOINT}} HTTP/1.1
+api-key: {{$dotenv %DAVINCI_OPENAI_KEY}}
+Content-Type: application/json
+
+{
+    "prompt": "What is the speed of light in kilometers per hour?",
+    "max_tokens": 100,
+    "temperature": 0.3
+}
+
+###
+
 POST {{$dotenv GPT_OPENAI_FULL_ENDPOINT}} HTTP/1.1
 api-key: {{$dotenv %GPT_OPENAI_KEY}}
 Content-Type: application/json
