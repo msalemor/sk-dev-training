@@ -46,3 +46,17 @@
 
 - SK may be too complex for simple applications.
 - Obviously, if a language is not supported.
+
+## Comparison to Langchain
+
+
+| Semantic Kernel        | Langchain                     |
+| ------------------------ | ------------------------------- |
+| Connectors             | Language Models (LLM/Chat)    |
+| SK Functions           | Prompt Templates              |
+| Variables in functions | Variables in prompt templates |
+| Pipes                  | Chains                        |
+| Planner                | Chains                        |
+| Memories               | Memory                        |
+
+**> Memories:** Usually are helpers to generate, store, retrieve and compare embeddings from vector databases
