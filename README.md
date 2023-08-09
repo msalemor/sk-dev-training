@@ -33,7 +33,7 @@
 
 ## When and when not to choose Semantic Kernel
 
-**Note:** Semantic Kernel is still in preview. I have encountered weekly breaking changes. I don't recommend it for production.
+**> Note:** Semantic Kernel is still in preview. I have encountered weekly breaking changes. I don't recommend it for production.
 
 ### When
 
