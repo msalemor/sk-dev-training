@@ -47,7 +47,7 @@
 - SK may be too complex for simple applications.
 - Obviously, if a language is not supported.
 
-## Comparison to Langchain
+## Sematic Kernel vs Langchain
 
 
 | Semantic Kernel        | Langchain                     |
@@ -58,5 +58,6 @@
 | Pipes                  | Chains                        |
 | Planner                | Chains                        |
 | Memories               | Memory                        |
+| C#, Python, Java       | Python                        |
 
 **> Memories:** Usually are helpers to generate, store, retrieve and compare embeddings from vector databases
