@@ -7,7 +7,7 @@
 - It supports prompt templating, function chaining, vectorized memory, and intelligent planning capabilities out of the box.
 - It enables you to create AI apps that combine the best of both worlds: natural language understanding and conventional programming logic
 
-## Advantages of using SK vs vanilla REST or other SDKs
+## Advantages of using SK vs making REST calls or using other SDKs
 
 - Plugable and composable architecture.
 - Resilient HttpClient client that can handle timeouts and throttling.
