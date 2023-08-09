@@ -49,9 +49,8 @@
 
 ## Sematic Kernel vs Langchain
 
-
 | Semantic Kernel        | Langchain                     |
-| ------------------------ | ------------------------------- |
+| -----------------------| ------------------------------|
 | Connectors             | Language Models (LLM/Chat)    |
 | SK Functions           | Prompt Templates              |
 | Variables in functions | Variables in prompt templates |
@@ -60,4 +59,4 @@
 | Memories               | Memory                        |
 | C#, Python, Java       | Python                        |
 
-**> Memories:** Usually are helpers to generate, store, retrieve and compare embeddings from vector databases
+**> Memories:** Usually are helpers to generate, store, retrieve and compare embeddings from vector databases.
