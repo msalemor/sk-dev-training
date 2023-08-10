@@ -84,3 +84,38 @@ Content-Type: application/json
     "max_tokens": 100,
     "temperature": 0.3
 }
+
+###
+
+POST {{$dotenv ADA_OPENAI_FULL_ENDPOINT}} HTTP/1.1
+api-key: {{$dotenv %ADA_OPENAI_KEY}}
+Content-Type: application/json
+
+{
+    "input":"List to restaurants in Miami."
+}
+
+###
+
+POST {{$dotenv ADA_OPENAI_FULL_ENDPOINT}} HTTP/1.1
+api-key: {{$dotenv %ADA_OPENAI_KEY}}
+Content-Type: application/json
+
+{
+    "input":"Top restaruants in Miami are: \n1. Versalles\n2. Joes Stone Crab"
+}
+
+###
+
+POST {{$dotenv GPT_OPENAI_FULL_ENDPOINT}} HTTP/1.1
+api-key: {{$dotenv %GPT_OPENAI_KEY}}
+Content-Type: application/json
+
+{
+    "messages": [
+        {"role":"system","content":"You are a general assistant"},
+        {"role":"user","content":"What are the top restaurants in Miami from this list:Top restaruants in Miami are: \n1. Versalles\n2. Joes Stone Crab"}
+    ],
+    "max_tokens": 100,
+    "temperature": 0.3
+}

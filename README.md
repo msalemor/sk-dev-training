@@ -33,7 +33,7 @@
 
 ## When and when not to choose Semantic Kernel
 
-**> Note:** Semantic Kernel is still in preview. I have encountered weekly breaking changes. I don't recommend it for production.
+**> Note:** Semantic Kernel is still in preview. I have encountered weekly breaking changes. It is not recommend it for production.
 
 ### When
 
@@ -60,3 +60,13 @@
 | C#, Python, Java       | Python                        |
 
 **> Memories:** Usually are helpers to generate, store, retrieve and compare embeddings from vector databases.
+
+## Running the demos
+
+**> Recommended environment:** WSL with Python3
+
+Requirements:
+
+- .NET 6 or 7
+- VS Code
+- VS Code Polyglot extension
