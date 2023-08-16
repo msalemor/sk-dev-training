@@ -68,7 +68,7 @@ DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/
 
 ```mermaid
 graph LR;
-  A(Basic<br/>Development) --> B(Development<br/>with SDK<br/>_____________<br/> <br/>SK lands here)
+  A(Basic<br/>Development) --> B(Development<br/>with SDKs<br/>_____________<br/> <br/>SK lands here)
   B-->C(Application Patterns<br/>and Architectures)
   C-->D(Applications &<br/>Solutions)
   D-->E(WAF<br/>Deployment)
@@ -100,7 +100,7 @@ graph LR;
 
 ## When and when not to choose Semantic Kernel
 
-**> Note:** Semantic Kernel is still in preview. It is not yet recommended for production.
+**Note:** Semantic Kernel is still in preview. It is not yet recommended for production.
 
 ### When
 
