@@ -8,9 +8,12 @@ This repo includes C# interactive notebooks at `notebooks/` that showcase how to
 - `notebooks/sk-cars.ipynb`: A sales description generator for used cars implemented with Semantic Kernel.
 - `notebooks/chat.ipynb`: A GPT chatbot implementation without Semantic Kernel.
 - `notebooks/sk-chat.ipynb`: A GPT chatbot implementation with Semantic Kernel.
-- `notebooks/sk-pipes.ipynb`: Showcases how to use Semantic Kernel pipes. This code came from the samples SK provides, but I have adapted it to run in C# interactive.
-- `notebooks/sk-planner.ipynb`: Showcases how to use the Semantic Kernel sequential planner. This code came from the samples SK provides, but I have adapted it to run in C# interactive.
-- `notebooks/sk-memory.ipynb`: Demonstrates how to use the Semantic Kernel memories functionality. This code came from the samples SK provides, but I have adapted it to run in C# interactive.
+- `notebooks/sk-pipes.ipynb`: Showcases how to use Semantic Kernel pipes.
+  - **Note:** This code comes from the original dotnet/SK solution. I just have adapted it to run in C# interactive.
+- `notebooks/sk-planner.ipynb`: Showcases how to use the Semantic Kernel sequential planner.
+  - **Note:** This code comes from the original dotnet/SK solution. I just have adapted it to run in C# interactive.
+- `notebooks/sk-memory.ipynb`: Demonstrates how to use the Semantic Kernel memories functionality.
+  - **Note:** This code comes from the original dotnet/SK solution. I just have adapted it to run in C# interactive.
 - `notebooks/sk-memory-rag.ipynb`: Demonstrate a RAG pattern implementation using Semantic Kernel volatile memory. Useful to understand the concepts of this pattern.
 - `notebooks/sk-memory-raasg.ipynb`: Demonstrate a RAASG pattern implementation using Semantic Kernel. Useful to understand the concepts of this pattern.
 
