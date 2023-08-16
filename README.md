@@ -64,7 +64,7 @@ DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/
 - It supports prompt templating, function chaining, vectorized memory, and intelligent planning capabilities out of the box.
 - It enables you to create AI apps that combine the best of both worlds: natural language understanding and conventional programming logic
 
-## Where does SK land in the development stack?
+## Where does SK land in the development of LLM/Chatbot applications?
 
 ```mermaid
 graph LR;
