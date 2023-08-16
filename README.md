@@ -74,8 +74,6 @@ graph LR;
   D-->E(WAF<br/>Deployment)
 ```
 
-- SK in andvanced SDK
-
 ## Advantages of using SK vs making REST calls or using other SDKs
 
 - Plugable and composable architecture.
@@ -116,12 +114,12 @@ graph LR;
 - SK may be too complex for simple applications.
 - Obviously, if a language is not supported.
 
-## Sematic Kernel vs Langchain
+## Semantic Kernel vs Langchain
 
-| Semantic Kernel        | Langchain                     |
+| Semantic Kernel        | LangChain                     |
 | -----------------------| ------------------------------|
 | Connectors             | Language Models (LLM/Chat)    |
-| SK Functions           | Prompt Templates              |
+| SK functions           | Prompt Templates              |
 | Variables in functions | Variables in prompt templates |
 | Pipes                  | Chains                        |
 | Planner                | Chains                        |
