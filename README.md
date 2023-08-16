@@ -1,4 +1,4 @@
-# Introduction to Semantic Kernel
+# Introduction to Semantic Kernel Development
 
 ## What is Semantic Kernel?
 
@@ -33,7 +33,7 @@
 
 ## When and when not to choose Semantic Kernel
 
-**> Note:** Semantic Kernel is still in preview. I have encountered weekly breaking changes. It is not recommend it for production.
+**> Note:** Semantic Kernel is still in preview. It is not yet recommend it for production.
 
 ### When
 
