@@ -23,8 +23,9 @@ Requirements:
 - .NET 6 or 7
 - VS Code
 - VS Code Polyglot extension
- 
+
 Running:
+
 - In Azure create OpenAI endpoints for:
   - GPT 3.5 or 4
   - ADA Embeddings
@@ -32,6 +33,7 @@ Running:
 - Navigate to the notebooks folder within this repo
 - Make sure the VS Code is installed as well as the VS Code Polyglot extension and either .NET 6 or 7
 - Create a file called: `notebooks/.env` and add the following values from
+
 ```bash
 GPT_OPENAI_KEY=<KEY>
 GPT_OPENAI_DEPLOYMENT_NAME=<MODEL_NAME>
@@ -43,10 +45,10 @@ DAVINCI_OPENAI_DEPLOYMENT_NAME=<MODEL_NAME>
 DAVINCI_OPENAI_ENDPOINT=https://<NAME>.openai.azure.com/
 DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/<MODEL_NAME>/completions?api-version=2022-12-01
 ```
+
 - Type: 'code .'
 - Open anyone of the notebooks
 - Click the play button at each cell and review the headings and comments
-
 
 ## What is Semantic Kernel?
 
@@ -108,4 +110,3 @@ DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/
 | C#, Python, Java       | Python                        |
 
 **Memories:** Usually are helpers to generate, store, retrieve and compare embeddings from vector databases.
-
