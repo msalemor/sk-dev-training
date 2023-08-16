@@ -71,7 +71,7 @@ graph LR;
 
 ## Advantages of using SK vs making REST calls or using other SDKs
 
-- Plugable and composable architecture.
+- Kernel can be configured via plugins that are implemented by interfaces.
 - Resilient HttpClient client that can handle timeouts and throttling.
   - Note: HttpClient in the main network object to perform Http operations in many languages.
 - Semantic functions.
