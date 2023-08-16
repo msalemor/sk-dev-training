@@ -19,7 +19,9 @@ This repo includes C# interactive notebooks at `notebooks/` that showcase how to
 
 ## Running the demos
 
-**Recommended environment:** WSL with Python3
+Recommended environment:
+- WSL with Python3
+- Windows Terminal
 
 Requirements:
 
