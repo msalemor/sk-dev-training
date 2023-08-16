@@ -35,7 +35,7 @@ Running:
 - In Azure create OpenAI endpoints for:
   - GPT 3.5 or 4
   - ADA Embeddings
-  - Copy the deployment name, endpoint and API key information
+  - Copy the deployment name, endpoint, and API key information
 - Clone this repo
 - Navigate to the notebooks folder within this repo
 - Make sure the VS Code is installed as well as the VS Code Polyglot extension and either .NET 6 or 7
@@ -82,7 +82,7 @@ graph LR;
 - Resilient HttpClient client that can handle timeouts and throttling.
   - Note: HttpClient in the main network object to perform Http operations in many languages.
 - Semantic functions.
-  - Generally, a SK function is defined as a templated prompt.
+  - Generally, an SK function is defined as a templated prompt.
     - ie: `var skfJokeDefinition = "Write a joke about {{$$input}}.";`
     - ie: `var skSpanishTranslator = "Translate from English to Spanish: {{$$input}}";`
   - SK functions can be piped together:
@@ -102,11 +102,11 @@ graph LR;
 
 ## When and when not to choose Semantic Kernel
 
-**> Note:** Semantic Kernel is still in preview. It is not yet recommend it for production.
+**> Note:** Semantic Kernel is still in preview. It is not yet recommended for production.
 
 ### When
 
-- There's language support particularly for C# and Python (more languages support coming).
+- There's language support, particularly for C# and Python (more language support coming).
 - The app can take advantage of the functionality provided by Semantic Kernel such as pipes, orchestration, memories, etc.
 - If you need complex SK function orchestrations.
 - If you need to work with embeddings.
@@ -128,4 +128,4 @@ graph LR;
 | Memories               | Memory                        |
 | C#, Python, Java       | Python                        |
 
-**Memories:** Usually are helpers to generate, store, retrieve and compare embeddings from vector databases.
+**Memories:** Usually are helpers to generate, store, retrieve, and compare embeddings from vector databases.
