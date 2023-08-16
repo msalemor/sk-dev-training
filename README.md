@@ -61,6 +61,18 @@ DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/
 - It supports prompt templating, function chaining, vectorized memory, and intelligent planning capabilities out of the box.
 - It enables you to create AI apps that combine the best of both worlds: natural language understanding and conventional programming logic
 
+## Where does SK land in the development stack?
+
+```mermaid
+graph LR;
+  A(Basic<br/>Development) --> B(Development<br/>with SDK)
+  B-->C(Application Patterns<br/>and Architectures)
+  C-->D(Applications &<br/>Solutions)
+  D-->E(WAF<br/>Deployment)
+```
+
+- SK in andvanced SDK
+
 ## Advantages of using SK vs making REST calls or using other SDKs
 
 - Plugable and composable architecture.
