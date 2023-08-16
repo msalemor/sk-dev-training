@@ -29,7 +29,8 @@ Running:
 - In Azure create OpenAI endpoints for:
   - GPT 3.5 or 4
   - ADA Embeddings
-  - Copy the endpoint and API key information
+  - Copy the deployment name, endpoint and API key information
+- Clone this repo
 - Navigate to the notebooks folder within this repo
 - Make sure the VS Code is installed as well as the VS Code Polyglot extension and either .NET 6 or 7
 - Create a file called: `notebooks/.env` and add the following values from
@@ -47,7 +48,7 @@ DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/
 ```
 
 - Type: 'code .'
-- Open anyone of the notebooks
+- Open any one of the notebooks
 - Click the play button at each cell and review the headings and comments
 
 ## What is Semantic Kernel?
