@@ -46,6 +46,14 @@ record DavinciCompletion(
 record Car(string VIN, string Make, string Model, int Year, string Color, string Motor, string Package, int milage, double price);
 record CarTranslation(string VIN, string En, string ES);
 
+public record Learning(
+    [property: JsonPropertyName("id")] string Id,
+    [property: JsonPropertyName("content")] string Content);
+
+public record Chunk(
+    [property: JsonPropertyName("id")] string Id,
+    [property: JsonPropertyName("text")] string Text);
+
 enum Role
 {
     system,

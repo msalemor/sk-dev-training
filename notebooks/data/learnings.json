@@ -1,0 +1,10 @@
+[
+    {
+        "id": "1",
+        "content": "In a scenario where Azure FrontDoor is used with Azure Container Apps configuring the certificates is difficult both because the documentation is not clear and because the configuration itself is difficult.\n\nThe recommendation is both to improve the documentation and provide feedback to both the FrontDoor and ACA teams to improve the experience when customers are configuring."
+    },
+    {
+        "id": "2",
+        "content": "In scenarios where App Services are using VNET integration, customers will beginner knowledge of App Services Networking are finding difficult to configure the VNET integration.\n\nThe recommendation is to identify customers who are new to App Services networking and first have them watch a video on the topic."
+    }
+]
