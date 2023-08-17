@@ -17,7 +17,7 @@ This repo includes C# interactive notebooks at `notebooks/` that showcase how to
 - `notebooks/sk-memory-rag.ipynb`: Demonstrate a RAG pattern implementation using Semantic Kernel volatile memory. Useful to understand the concepts of this pattern.
 - `notebooks/sk-memory-raasg.ipynb`: Demonstrate a RAASG pattern implementation using Semantic Kernel. Useful to understand the concepts of this pattern.
 
-**Note:** I am using C# interactive notebooks because I find them helpful for documenting, explaining, and debugging the different concepts. In productions applications I have developed have c# projects with WebAPIs and React frontends.
+**Note:** I am using C# interactive notebooks because I find them helpful for documenting, explaining, and debugging the different concepts. In productions applications, I have deployed c# projects with WebAPIs and React frontends.
 
 ## Running the demos
 
