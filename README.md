@@ -85,10 +85,10 @@ curl https://YOUR_RESOURCE_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
 }"
 ```
 
-## So where is the complexity then? It is the everything else.
+### So where is the complexity then? It is the everything else.
 
 - For example:
-  - As a foundational model that can solve many problems, applying it to help solve these problems.
+  - As a foundational model that can solve many problems, applying it this concept is complex in itself.
   - Making resilient applications that can handle disconnections and throttling
   - Developing complex orchestrations
   - Preparing the prompts and applying prompt engineering (Grounding)
@@ -100,7 +100,7 @@ curl https://YOUR_RESOURCE_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
 ## What is Semantic Kernel?
 
 - Is an open-source SDK that provides a set of connectors and plugins that allow you to orchestrate AI models and skills with natural language semantic functions, traditional native code functions, and embeddings-based memory.
-- It supports prompt templating, function chaining, vectorized memory, and intelligent planning capabilities out of the box.
+- It supports prompt templating, function chaining, vectorized memory, and intelligent planning capabilities.
 - It enables you to create AI apps that combine the best of both worlds: natural language understanding and conventional programming logic
 
 ## Where does SK land in the development of LLM/Chatbot applications?

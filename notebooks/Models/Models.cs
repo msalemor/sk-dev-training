@@ -43,7 +43,13 @@ record DavinciCompletion(
     [property: JsonPropertyName("choices")] List<DavinciChoice> Choices,
     [property: JsonPropertyName("usage")] Usage Usage);
 
-record Car(string VIN, string Make, string Model, int Year, string Color, string Motor, string Package, int milage, double price);
+record Car(string VIN, string Make, string Model, int Year, string Color, string Motor, string Package, int milage, double price)
+{
+    public sealed override string ToString()
+    {
+        return $"{Year} {Make} {Model} {Color} {Motor} {Package} with {milage} miles for ${price}";
+    }
+};
 record CarTranslation(string VIN, string En, string ES);
 
 public record Learning(
