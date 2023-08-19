@@ -54,10 +54,52 @@ DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/
 - Open any one of the notebooks
 - Click the play button at each cell and review the headings and comments
 
+## What are some important concepts in LLM/Chatbot developement
+
+* Understanding the difference between LLM/Chatbot model
+  * An LLM (Davinci) model is for answer/response
+  * An Chat (GPT) model can keep a conversation, but it can also be used in answer/response
+* Understanding tokens, token limits, and working around these limits
+* Understanding the prompt and completion models
+* Understanding and applying prompt engineering
+
+### This is how simple a GPT call looks like
+
+```text
+Summarize the text below as a bullet point list of the most important points.
+
+Text: """
+{text input here}
+"""
+```
+
+You don't even have to write a program, you can just `curl`:
+
+```text
+curl https://YOUR_RESOURCE_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME/completions?api-version=2023-05-15\
+  -H "Content-Type: application/json" \
+  -H "api-key: YOUR_API_KEY" \
+  -d "{
+  \"prompt\": \"Once upon a time\",
+  \"max_tokens\": 5
+}"
+```
+
+## So where is the complexity then? It is the everything else.
+
+- For example:
+  - As a foundational model that can solve many problems, applying it to help solve these problems.
+  - Making resilient applications that can handle disconnections and throttling
+  - Developing complex orchestrations
+  - Preparing the prompts and applying prompt engineering (Grounding)
+  - Saving and recalling text from embeddings, for example in the RAG pattern
+  - Processing the completions
+
+**Semantic Kernel can help with the everything else.**
+
 ## What is Semantic Kernel?
 
-- Is an open-source SDK that lets you easily combine AI services like OpenAI, Azure OpenAI, and Hugging Face with conventional programming languages like C# and Python.
-- It provides a set of connectors and plugins that allow you to orchestrate AI models and skills with natural language semantic functions, traditional native code functions, and embeddings-based memory.
+- Is an open-source SDK that provides a set of connectors and plugins that allow you to orchestrate AI models and skills with natural language semantic functions, traditional native code functions, and embeddings-based memory.
 - It supports prompt templating, function chaining, vectorized memory, and intelligent planning capabilities out of the box.
 - It enables you to create AI apps that combine the best of both worlds: natural language understanding and conventional programming logic
 
@@ -65,10 +107,13 @@ DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/
 
 ```mermaid
 graph LR;
-  A(Basic<br/>Development) --> B(Development<br/>with SDKs<br/>_____________<br/> <br/>SK lands here)
+  A(Basic<br/>Development) --> B(Development<br/>with SDKs<br/>_____________<br/> <br/>SK<br/>lands here)
   B-->C(Application Patterns<br/>and Architectures)
   C-->D(Applications &<br/>Solutions)
-  D-->E(WAF<br/>Deployment)
+  D-->E(WAF<br/>Deployment)  
+  classDef someclass fill:blue
+  class B someclass
+
 ```
 
 ## Advantages of using SK vs making REST calls or using other SDKs
@@ -113,8 +158,9 @@ graph LR;
 
 ## Semantic Kernel vs Langchain
 
+
 | Semantic Kernel        | LangChain                     |
-| -----------------------| ------------------------------|
+| ------------------------ | ------------------------------- |
 | Connectors             | Language Models (LLM/Chat)    |
 | SK functions           | Prompt Templates              |
 | Variables in functions | Variables in prompt templates |
