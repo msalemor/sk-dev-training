@@ -66,7 +66,7 @@ DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/
 ### This is how simple a GPT call looks like
 
 ```text
-Summarize the text below as a bullet point list of the most important points.
+Summarize the following text:
 
 Text: """
 {text input here}
