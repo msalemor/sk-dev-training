@@ -80,7 +80,7 @@ curl https://YOUR_RESOURCE_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
   -H "Content-Type: application/json" \
   -H "api-key: YOUR_API_KEY" \
   -d "{
-  \"prompt\": \"Once upon a time\",
+  \"prompt\": \"What is the speed of light?\",
   \"max_tokens\": 5
 }"
 ```
