@@ -124,7 +124,7 @@ graph LR;
 - Semantic functions.
   - Generally, an SK function is defined as a templated prompt.
     - ie: `var skfJokeDefinition = "Write a joke about {{$$input}}.";`
-    - ie: `var skSpanishTranslator = "Translate from English to Spanish: {{$$input}}";`
+    - ie: `var skSpanishTranslator = "Translate the following text from English to Spanish:\n\n\nText:"""\n{{$$input}}\n"""";`
   - SK functions can be piped together:
     - ie:
 
