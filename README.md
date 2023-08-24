@@ -85,17 +85,17 @@ curl https://YOUR_RESOURCE_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
 }"
 ```
 
-### So where is the complexity then? It is the everything else.
+### So where is the complexity then? It is everything else.
 
 - For example:
-  - As a foundational model that can solve many problems, applying it this concept is complex in itself.
+  - As a foundational model that can solve many problems, applying this concept is complex in itself.
   - Making resilient applications that can handle disconnections and throttling
   - Developing complex orchestrations
   - Preparing the prompts and applying prompt engineering (Grounding)
   - Saving and recalling text from embeddings, for example in the RAG pattern
   - Processing the completions
 
-**Semantic Kernel can help with the everything else.**
+**Semantic Kernel can help with everything else.**
 
 ## What is Semantic Kernel?
 
