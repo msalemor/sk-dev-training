@@ -111,7 +111,7 @@ graph LR;
   B-->C(Application Patterns<br/>and Architectures)
   C-->D(Applications &<br/>Solutions)
   D-->E(WAF<br/>Deployment)  
-  classDef someclass fill:blue
+  classDef someclass fill:blue,color:white
   class B someclass
 
 ```
