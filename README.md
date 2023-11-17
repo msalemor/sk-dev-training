@@ -54,14 +54,25 @@ DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/
 - Open any one of the notebooks
 - Click the play button at each cell and review the headings and comments
 
-## What are some important concepts in LLM/Chatbot developement
+## What are some important concepts in LLM/Chatbot development
 
 * Understanding the difference between LLM/Chatbot model
   * An LLM (Davinci) model is for answer/response
-  * An Chat (GPT) model can keep a conversation, but it can also be used in answer/response
+  * A chat (GPT) model can keep a conversation, but it can also be used in answer/response
 * Understanding tokens, token limits, and working around these limits
 * Understanding the prompt and completion models
 * Understanding and applying prompt engineering
+
+### Resiliency considerations and recommendations
+
+- Azure GPT models have two kinds of throttling:
+  - By token per minute (TPM)
+  - By Number of requests per minute 
+- When throttling occurs, the API will return a RetryAfter (in seconds) in the header
+- Set the number of tokens as the number of tokens that you are expecting (not how many you will send)
+- Consider using (currently as of 11/2023) GPT 3.5 Turbo over GPT 4. GPT 3.5 is faster and offers a higher TPM
+- Consider load balancing between two accounts
+- Handle retries at the client application and consider the RetryAfter leveraging the timeout in the RetryAfter header
 
 ### This is how simple a GPT call looks like
 
