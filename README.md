@@ -63,17 +63,6 @@ DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/
 * Understanding the prompt and completion models
 * Understanding and applying prompt engineering
 
-### Resiliency considerations and recommendations
-
-- Azure GPT models have two kinds of throttling:
-  - By token per minute (TPM)
-  - By Number of requests per minute 
-- When throttling occurs, the API will return a RetryAfter (in seconds) in the header
-- Set the number of tokens as the number of tokens that you are expecting (not how many you will send)
-- Consider using (currently as of 11/2023) GPT 3.5 Turbo over GPT 4. GPT 3.5 is faster and offers a higher TPM
-- Consider load balancing between two accounts
-- Handle retries at the client application and consider the RetryAfter leveraging the timeout in the RetryAfter header
-
 ### This is how simple a GPT call looks like
 
 ```text
@@ -107,6 +96,17 @@ curl https://YOUR_RESOURCE_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYM
   - Processing the completions
 
 **Semantic Kernel can help with everything else.**
+
+#### Resiliency considerations and recommendations
+
+- Azure GPT models have two kinds of throttling:
+  - By token per minute (TPM)
+  - By Number of requests per minute 
+- When throttling occurs, the API will return a RetryAfter (in seconds) in the header
+- Set the number of tokens as the number of tokens that you are expecting (not how many you will send)
+- Consider using (currently as of 11/2023) GPT 3.5 Turbo over GPT 4. GPT 3.5 is faster and offers a higher TPM
+- Consider load balancing between two accounts
+- Handle retries at the client application and consider the RetryAfter leveraging the timeout in the RetryAfter header
 
 ## What is Semantic Kernel?
 
