@@ -56,6 +56,8 @@ DAVINCI_OPENAI_FULL_ENDPOINT=https://<NAME>.openai.azure.com/openai/deployments/
 
 ## What are some important concepts in LLM/Chatbot development
 
+* Understanding that generative AI is a Foundational model
+  * A foundational model can be used to solve many problems
 * Understanding the difference between LLM/Chatbot model
   * An LLM (Davinci) model is for answer/response
   * A chat (GPT) model can keep a conversation, but it can also be used in answer/response
