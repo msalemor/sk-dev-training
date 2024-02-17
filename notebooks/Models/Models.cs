@@ -58,7 +58,10 @@ public record Learning(
 
 public record Chunk(
     [property: JsonPropertyName("id")] string Id,
-    [property: JsonPropertyName("text")] string Text);
+    [property: JsonPropertyName("text")] string Text,
+    [property: JsonPropertyName("file")] string File);
+
+
 
 public class ChunkInfo
 {
